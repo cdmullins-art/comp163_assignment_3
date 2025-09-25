@@ -1,1 +1,3 @@
 # comp163_assignment_3
+
+This game is a text-based program where you type in commands or inputs and if they're applicable to the data stored in the code, the game reacts to what you pick. It uses the `not in` operator to make sure you don’t enter something invalid and the `or` operator to check for multiple possibilities at once, so the game can handle different inputs without crashing. The branching logic with `if`, `elif`, and `else` decides what happens based on your choices, it gives different messages or outcomes depending on what you type. I used AI to help explain operators, structure examples, and clarify the game concept, as well as to review and point out errors in my code when it didn't run. All coding and explanations were reviewed and edited by me.
