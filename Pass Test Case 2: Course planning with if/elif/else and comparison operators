@@ -1,0 +1,38 @@
+
+student_name = "Zyon Lawson"
+current_gpa = 3.2
+study_hours = 20
+social_points = 50
+stress_level = 30
+
+print("Welcome to College Life Adventure!")
+print(f"Student: {student_name}")
+print(f"GPA: {current_gpa}")
+print(f"Study hours: {study_hours}")
+print(f"Social points: {social_points}")
+print(f"Stress level: {stress_level}")
+
+print("\nChoose your course load:")
+print("A) Light (12 credits)")
+print("B) Standard (15 credits)")
+print("C) Heavy (18 credits)")
+
+choice = input("Your choice: ").strip().upper()
+
+if choice == "A":
+    study_hours += 5
+    stress_level -= 5
+elif choice == "B":
+    study_hours += 10
+    stress_level += 5
+elif choice == "C":
+    study_hours += 15
+    if current_gpa >= 3.0:   # comparison operator
+        stress_level += 10
+    else:
+        stress_level += 20
+else:
+    print("Invalid choice, you stay undecided.")
+
+print(f"Updated Study hours: {study_hours}")
+print(f"Updated Stress level: {stress_level}")
